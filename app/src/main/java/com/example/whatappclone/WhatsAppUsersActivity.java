@@ -29,7 +29,7 @@ import com.shashank.sony.fancytoastlib.FancyToast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WhatsAppUsersActivity extends AppCompatActivity {
+public class WhatsAppUsersActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     ListView listView;
     ArrayAdapter arrayAdapter;
@@ -95,6 +95,8 @@ public class WhatsAppUsersActivity extends AppCompatActivity {
         });
 
         listView=findViewById(R.id.my_ListView);
+        listView.setOnItemClickListener(this);
+
         arrayList=new ArrayList();
         arrayAdapter=new ArrayAdapter(getApplicationContext(),android.R.layout.simple_list_item_1,arrayList);
 
@@ -163,6 +165,13 @@ public class WhatsAppUsersActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+        Intent A=new Intent(WhatsAppUsersActivity.this,WhatsAppChatActivity.class);
+        A.putExtra("SelectedUser",arrayList.get(i));
+        startActivity(A);
 
     }
+}
 
