@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WhatAppClone</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">mH64BtQPQL4tszX7YRIpcyXbHQwCSKpX7Hy74c7l</string>
+    <string name="back4app_client_key">qEdE6HA8gnmlOLVhWdb1ysGHdzQ0kC16W2HJmhJa</string>
+</resources>
