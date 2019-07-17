@@ -65,10 +65,10 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
         edtEmail=findViewById(R.id.edtEmail);
 
-/*        if(ParseUser.getCurrentUser() != null){
+        if(ParseUser.getCurrentUser() != null){
             //  ParseUser.getCurrentUser().logOut();
             transtiontoSocialMediaActivity();
-        }*/
+        }
 
     }
 
